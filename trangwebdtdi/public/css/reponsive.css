@@ -1,0 +1,145 @@
+/*L-desktop*/
+@media (min-device-width: 1600px) {
+    .lmh {
+        margin-bottom: 0px;
+    }
+
+    .ntb {
+        height: 262px !important;
+    }
+
+    .tencty {
+        display: flex;
+    }
+
+    .timelv {
+        display: flex !important;
+    }
+}
+
+/*L-laptops*/
+@media only screen and (min-device-width: 1200px) and (max-device-width: 1440px) {
+    .lmh {
+        margin-bottom: 0px;
+    }
+
+    .ntb {
+        height: 262px !important;
+    }
+}
+
+/*laptops/tablets*/
+@media only screen and (min-device-width: 576px) and (max-device-width: 1024px) {
+    .lmh {
+        margin-bottom: 0px;
+    }
+
+    .ntb {
+        height: 262px !important;
+    }
+
+    .fth {
+        margin: 0 10px !important;
+    }
+
+    .main-footer .widgets-section {
+        padding: 0 0 20px;
+    }
+}
+
+/*tablets*/
+@media only screen and (min-device-width: 576px) and (max-device-width: 768px) {
+    .lmh {
+        margin-bottom: 0px;
+    }
+
+    #doitac {
+        margin: 0 35px !important;
+    }
+
+    .fth {
+        margin: 0 10px !important;
+    }
+
+    .main-footer .widgets-section {
+        padding: 0 0 20px;
+    }
+}
+
+/*Smart phone*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 576px) {
+    .lmh {
+        margin-bottom: 0px;
+    }
+
+    #doitac {
+        margin: 0 68px !important;
+    }
+
+    .fth {
+        margin: 0 10px !important;
+    }
+
+    .main-footer .widgets-section {
+        padding: 0 0 20px;
+    }
+
+    .timelv {
+        display: flex !important;
+    }
+}
+
+@media only screen and (max-device-width: 319px) {
+    .lmh {
+        margin-bottom: 0px;
+    }
+
+    #doitac {
+        margin: 0 35px !important;
+    }
+
+    .fth {
+        margin: 0 10px !important;
+    }
+
+    .main-footer .widgets-section {
+        padding: 0 0 20px;
+    }
+}
+
+/* custom */
+@media only screen and (min-device-width: 576px) and (max-device-width: 1200px) {
+    .ntb {
+        height: 262 !important;
+    }
+}
+
+@media only screen and (max-width: 599px) {
+    .ntb {
+        height: 265px !important;
+    }
+}
+
+@media only screen and (min-device-width: 960px) and (max-device-width: 1200px) {
+    .ntb {
+        height: 262 !important;
+    }
+}
+
+@media only screen and (min-device-width: 1275px) and (max-device-width: 1600px) {
+    .tencty {
+        display: flex !important;
+    }
+}
+
+@media only screen and (min-device-width: 1385px) and (max-device-width: 1599px) {
+    .timelv {
+        display: flex !important;
+    }
+}
+
+@media only screen and (min-device-width: 576px) and (max-device-width: 767px) {
+    .timelv {
+        display: flex !important;
+    }
+}
