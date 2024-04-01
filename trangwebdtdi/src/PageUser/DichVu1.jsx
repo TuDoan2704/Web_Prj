@@ -515,7 +515,7 @@
               chăm sóc khách hàng sau dịch vụ luôn để lại dấu ấn tốt. Khẳng định sự uy tín của công ty
               trên thị trường cung cấp dịch vụ phần mềm.</a>
           </div>
-        </div>
+        </div> 
         {/* Service Block */}
         <div className="service-block col-xl-4 col-lg-4 col-md-4 col-sm-6 wow fadeInUp">
           <div className="inner-box ">
@@ -755,7 +755,7 @@
     <div className="auto-container">
       <div className="sec-title text-center">
         <span className="sub-title">Các dự án đã triển khai</span>
-        <h2>Dự án của AT Tech</h2>
+        <h2>Dự án của DTDI Tech</h2>
       </div>
       <div className="carousel-outer">
         <div className="testimonial-carousel owl-carousel owl-theme">

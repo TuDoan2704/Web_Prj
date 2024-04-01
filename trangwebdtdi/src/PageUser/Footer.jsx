@@ -6,6 +6,8 @@ export default function Footer() {
   const [content21, setContent21] = useState();
   const [content22, setContent22] = useState();
   const [content23, setContent23] = useState();
+  const [content24, setContent24] = useState();
+  const [titile24, setTitle24] = useState();
 
   useEffect(() => {
     fetchData();
@@ -29,6 +31,10 @@ export default function Footer() {
           if (listData[i].id ==23) {
             setContent23(listData[i].content);
           }
+          if (listData[i].id ==24) {
+            setContent24(listData[i].content);
+            setTitle24(listData[i].title);
+          }
         }
       })
       .catch((error) => {
@@ -47,12 +53,8 @@ export default function Footer() {
                   <div className="footer-widget about-widget">
                     {/* <img class="logo" src="./css/images/Logo_full color.svg" alt=""> */}
                     {/* <img class="logo" src="./css/images/ATTECH., JSC.svg" alt="logo" style="width: 65%;">  */}
-                    <h5 style={{color: '#ffffff'}}>AT TECH ,. JSC</h5>
-                    <div className="text" style={{width: '92%'}}>Chúng tôi tự hào là một công ty công nghệ hàng
-                      đầu trong lĩnh
-                      vực
-                      công
-                      nghệ thông tin, mang đến cho quý khách hàng những giải pháp hữu ích.</div>
+                    <h5 style={{color: '#ffffff'}}>{titile24}</h5>
+                    <div className="text" style={{width: '92%'}}>{content24}</div>
                   </div>
                 </div>
                 {/*Footer Column*/}
@@ -101,9 +103,7 @@ export default function Footer() {
           <div className="footer-bottom">
             <div className="auto-container">
               <div className="inner-container">
-                <div className="copyright-text">©2023, VietNam, DTDI Tech., JSC <a href="index.html"> | All
-                    rights
-                    reserved</a></div>
+                <div className="copyright-text">Công ty Cổ phần Công nghệ DTDI © 2022</div>
               </div>
             </div>
           </div>

@@ -5,6 +5,7 @@ import Footer from "./Footer";
 import DichVu from "./DichVu";
 import VeChungToi from "./VeChungToi";
 import DuAn from "./DuAn";
+import DoiTac from "./DoiTac";
 
 export default function MenuUser() {
   return (
@@ -13,7 +14,8 @@ export default function MenuUser() {
       <TrangChu></TrangChu>
       <VeChungToi></VeChungToi>
       <DichVu></DichVu>
-      {/* <DuAn></DuAn> */}
+      <DuAn></DuAn>
+      <DoiTac></DoiTac>
 
       <Footer></Footer>
     </div>

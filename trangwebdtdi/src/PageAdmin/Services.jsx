@@ -33,7 +33,7 @@ export default function Services({list, setList}) {
       },
     })
       .then((response) => {
-        console.log("ackkkkk: ", response.data);
+        alert("Cập nhật thông tin thành công");
       })
       .catch((error) => {
         console.error(error);
@@ -58,7 +58,7 @@ export default function Services({list, setList}) {
           loading={false}
           size="default"
         >
-          <Input
+          <TextArea
               value={item.title}
               onChange={(e) => handleChangeTitle(e.target.value, index)}
             />

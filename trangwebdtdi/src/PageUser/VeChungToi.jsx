@@ -66,7 +66,7 @@ return(
           {/* <div class="">
 					<div> */}
           <div className="col-lg-7 sec-title text-center" style={{margin: '0px auto 30px auto'}}>
-            <span className="sub-title">Tại sao chọn AT Tech</span>
+            <span className="sub-title">Tại sao chọn DTDI Tech</span>
             <h2>Làm hài lòng khách hàng là niềm hạnh phúc của chúng tôi!</h2>
           </div>
           {/* </div>
