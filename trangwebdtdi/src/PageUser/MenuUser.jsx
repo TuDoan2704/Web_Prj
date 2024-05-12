@@ -10,6 +10,7 @@ import DoiTac from "./DoiTac";
 export default function MenuUser() {
   return (
     <div className="page-wrapper">
+      {/* <div class="preloader"></div> */}
       <Header></Header>
       <TrangChu></TrangChu>
       <VeChungToi></VeChungToi>

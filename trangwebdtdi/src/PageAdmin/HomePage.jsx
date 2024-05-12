@@ -46,7 +46,7 @@ export default function HomePage({ list, setList }) {
           title=""
           hoverable
           style={{ width: 300 }}
-          cover={<img src={"data:image/jpeg;base64," + item.fileData}/>}
+          cover={<img src={"" + item.fileData}/>}
           actions={[
             item.id !== 7 && item.id !== 8 && item.id !== 9 && item.id !== 10 ? (
             <UploadImg

@@ -98,11 +98,20 @@ export default function DuAn() {
     <>
       <section id="services" className="news-section">
         <div className="container" style={{ paddingTop: "0px !important" }}>
-          <div className="sec-title text-center" style={{ marginTop: "50px" }}>
+          <div className="sec-title text-center" >
             <span className="sub-title">Lĩnh vực hoạt động</span>
             <h2>Bạn cần, chúng tôi có!</h2>
           </div>
-          <OwlCarousel  key={key} items={3} loop nav margin={10}>
+          <OwlCarousel  key={key} items={3} loop nav margin={10} autoplay autoplayTimeout={2000}
+          responsive={{
+            0: {
+              items: 1
+            },
+            600: {
+              items: 3
+            }
+          }}
+          >
             <div className="testimonial-block">
               <div className="news-block fadeInUp">
                 <div className="slide_custom">
@@ -112,7 +121,7 @@ export default function DuAn() {
                         <img
                           className="imgK"
                           style={{ borderRadius: "10px" }}
-                          src={'data:image/jpeg;base64,'+ img29}
+                          src={''+ img29}
                           alt=""
                         />  
                       </a>
@@ -151,7 +160,7 @@ export default function DuAn() {
                       <a href>
                         <img
                           className="imgK"
-                          src={'data:image/jpeg;base64,'+ img30}
+                          src={''+ img30}
                           style={{ borderRadius: "10px" }}
                           alt=""
                         />
@@ -191,7 +200,7 @@ export default function DuAn() {
                       <a href>
                         <img
                           className="imgK"
-                          src={'data:image/jpeg;base64,'+ img31}
+                          src={''+ img31}
                           style={{ borderRadius: "10px" }}
                           alt=""
                         />
@@ -233,7 +242,7 @@ export default function DuAn() {
                       <a href>
                         <img
                           className="imgK"
-                          src={'data:image/jpeg;base64,'+ img32}
+                          src={''+ img32}
                           style={{ borderRadius: "10px" }}
                           alt=""
                         />
@@ -275,18 +284,27 @@ export default function DuAn() {
         <span className="sub-title">Các dự án đã triển khai</span>
         <h2>Dự án của DTDI Tech</h2>
       </div>
-      <Carousel items={2} loop nav margin={10}>
+      <Carousel key={key} items={2} loop nav margin={10}  autoplayTimeout={2000}
+      responsive={{
+        0: {
+          items: 1
+        },
+        600: {
+          items: 2
+        }
+      }}
+      >
           {/* Testimonial Block */}
           <div className="testimonial-block">
-            <div className="inner-box ct">
+            <div className="inner-box ct" >
               <div className="upper-box">
                 <h4 className="name">{title33}</h4>
               </div>
               <div className="text-box">
-                <div className="text">{content33}</div>
+                <div className="text">{content33} </div>
               </div>
               <div className="info-box">
-                <figure className="thumb"><img src={'data:image/jpeg;base64,'+ img33} />
+                <figure className="thumb"><img src={''+ img33} />
                 </figure>
                 <div className="rating">
                   <i className="fa fa-star" /><i className="fa fa-star" /><i className="fa fa-star" /><i className="fa fa-star" /><i className="fa fa-star" />
@@ -297,7 +315,7 @@ export default function DuAn() {
           </div>
           {/* Testimonial Block */}
           <div className="testimonial-block">
-            <div className="inner-box ct">
+            <div className="inner-box ct" >
               <div className="upper-box">
                 <h4 className="name">{title34}</h4>
               </div>
@@ -305,7 +323,7 @@ export default function DuAn() {
                 <div className="text">{content34}</div>
               </div>
               <div className="info-box">
-                <figure className="thumb"><img src={'data:image/jpeg;base64,'+ img34}/>
+                <figure className="thumb"><img src={''+ img34}/>
                 </figure>
                 <div className="rating">
                   <i className="fa fa-star" /><i className="fa fa-star" /><i className="fa fa-star" /><i className="fa fa-star" /><i className="fa fa-star-half" />
@@ -316,7 +334,7 @@ export default function DuAn() {
           </div>
           {/* Testimonial Block */}
           <div className="testimonial-block">
-            <div className="inner-box ct">
+            <div className="inner-box ct" >
               <div className="upper-box">
                 <h4 className="name">{title35}</h4>
               </div>
@@ -324,7 +342,7 @@ export default function DuAn() {
                 <div className="text">{content35}</div>
               </div>
               <div className="info-box">
-                <figure className="thumb"><img src={'data:image/jpeg;base64,'+ img35} /></figure>
+                <figure className="thumb"><img src={''+ img35} /></figure>
                 <div className="rating">
                   <i className="fa fa-star" /><i className="fa fa-star" /><i className="fa fa-star" /><i className="fa fa-star" /><i className="fa fa-star-half" />
                   <span className="avg-review">4.5 Reviews</span>
@@ -334,7 +352,7 @@ export default function DuAn() {
           </div>
           {/* Testimonial Block */}
           <div className="testimonial-block">
-            <div className="inner-box ct">
+            <div className="inner-box ct" >
               <div className="upper-box">
                 <h4 className="name">{title36}</h4>
               </div>
@@ -342,7 +360,7 @@ export default function DuAn() {
                 <div className="text">{content36}</div>
               </div>
               <div className="info-box">
-                <figure className="thumb"><img src={'data:image/jpeg;base64,' + img36} /></figure>
+                <figure className="thumb"><img src={'' + img36} /></figure>
                 <div className="rating">
                   <i className="fa fa-star" /><i className="fa fa-star" /><i className="fa fa-star" /><i className="fa fa-star" /><i className="fa fa-star" />
                   <span className="avg-review">4.9 Reviews</span>

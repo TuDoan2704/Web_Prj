@@ -1,7 +1,9 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Image } from "antd";
-import { urlCommon } from './../common';
+import { urlCommon } from "./../common";
+import { OwlCarousel } from "react-owl-carousel";
+import Carousel from "react-owl-carousel";
 
 export default function TrangChu() {
   const [listDataHome, setListDataHome] = useState([]);
@@ -27,14 +29,14 @@ export default function TrangChu() {
   const [content9, setContent9] = useState();
   const [tittle10, setTitle10] = useState();
   const [content10, setContent10] = useState();
-
+  const [key, setKey] = useState(0);
   useEffect(() => {
     fetchData();
   }, []);
 
   const fetchData = () => {
     axios
-      .get(urlCommon + 'getdata')
+      .get(urlCommon + "getdata")
       .then((response) => {
         let listData = response.data;
         setListDataHome(listData);
@@ -42,13 +44,13 @@ export default function TrangChu() {
           if (listData[i].id === 1) {
             setTitle1(listData[i].title);
             setImg1(listData[i].fileData);
-          }else if (listData[i].id === 2) {
+          } else if (listData[i].id === 2) {
             setTitle2(listData[i].title);
             setImg2(listData[i].fileData);
-          }else if (listData[i].id === 3) {
+          } else if (listData[i].id === 3) {
             setTitle3(listData[i].title);
             setImg3(listData[i].fileData);
-          }else if (listData[i].id === 4) {
+          } else if (listData[i].id === 4) {
             setTitle4(listData[i].title);
             setImg4(listData[i].fileData);
           } else if (listData[i].id === 5) {
@@ -58,7 +60,7 @@ export default function TrangChu() {
           } else if (listData[i].id === 6) {
             setTitle6(listData[i].title);
             setContent6(listData[i].content);
-            setImg6("data:image/jpeg;base64," + listData[i].fileData);
+            setImg6(listData[i].fileData);
           } else if (listData[i].id === 7) {
             setTitle7(listData[i].title);
             setContent7(listData[i].content);
@@ -73,11 +75,15 @@ export default function TrangChu() {
             setContent10(listData[i].content);
           }
         }
+        updateData();
       })
       .catch((error) => {
         console.error(error);
       });
   };
+  function updateData() {
+    setKey((prevKey) => prevKey + 1);
+  }
   return (
     <>
       <section className="main-slider" id="home">
@@ -92,14 +98,15 @@ export default function TrangChu() {
             data-version="5.4.1"
           >
             <ul>
-              {/* Slide 1 */}
               <li data-index="rs-1" data-transition="zoomout">
                 {/* MAIN IMAGE */}
-              
+
                 <Image
                   alt=""
                   className="rev-slidebg"
-                  src={"data:image/jpeg;base64," + img1}
+                  src={"" + img1}
+                  style={{ width: "100%", height:"100%" }}
+                  preview={false}
                 />
 
                 <div
@@ -120,9 +127,7 @@ export default function TrangChu() {
                   data-textalign="['top','top','top','top']"
                   data-frames='[{"delay":500,"speed":1000,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
                 >
-                  <h1>
-                    {title1}
-                  </h1>
+                  <h1>{title1}</h1>
                 </div>
                 <div
                   className="tp-caption"
@@ -152,13 +157,15 @@ export default function TrangChu() {
                   </div>
                 </div>
               </li>
-              {/* Slide 2 */}
+
               <li data-index="rs-2" data-transition="zoomout">
                 {/* MAIN IMAGE */}
                 <Image
                   alt=""
                   className="rev-slidebg"
-                  src={"data:image/jpeg;base64," + img2}
+                  src={"" + img2}
+                  style={{ width: "100%", height: "100%" }}
+                  preview={false}
                 />
 
                 <div
@@ -209,13 +216,14 @@ export default function TrangChu() {
                   </div>
                 </div>
               </li>
-              {/* Slide 3 */}
+
               <li data-index="rs-3" data-transition="zoomout">
-                {/* MAIN IMAGE */}
                 <Image
                   alt=""
                   className="rev-slidebg"
-                  src={"data:image/jpeg;base64," + img3}
+                  src={"" + img3}
+                  style={{objectFit: "cover", width: "100%", height: "100%"}}
+                  preview={false}
                 />
 
                 <div
@@ -236,9 +244,7 @@ export default function TrangChu() {
                   data-textalign="['top','top','top','top']"
                   data-frames='[{"delay":500,"speed":1000,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
                 >
-                  <h1>
-                    {title3}
-                  </h1>
+                  <h1>{title3}</h1>
                 </div>
                 <div
                   className="tp-caption"
@@ -268,13 +274,15 @@ export default function TrangChu() {
                   </div>
                 </div>
               </li>
-              {/* Slide 4 */}
+
               <li data-index="rs-4" data-transition="zoomout">
                 {/* MAIN IMAGE */}
                 <Image
                   alt=""
                   className="rev-slidebg"
-                  src={"data:image/jpeg;base64," + img4}
+                  src={"" + img4}
+                  style={{ width: "100%", height: "100%" }}
+                  preview={false}
                 />
                 <div
                   className="tp-caption"
@@ -350,7 +358,7 @@ export default function TrangChu() {
                 <span className="bg-shpe-1 bounce-x" />
                 <span className="bg-shpe-2 zoom-one" />
                 <figure className="image-1 overlay-anim wow fadeInUp">
-                  <img src={"data:image/jpeg;base64," + img5} alt="" />
+                  <img src={"" + img5} alt="" />
                 </figure>
                 <span className="logo-box bounce-y">
                   <img src="images/icons/icon-logo.png" alt="" />

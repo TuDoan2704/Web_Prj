@@ -109,7 +109,7 @@ nav a.active {
 
 .logo {
   width: 170px;
-  height: 68px;
+  height: 106px;
 }
 
 .imgK {
@@ -3556,7 +3556,7 @@ Sticky Header
   transform: translateX(101%);
 }
 
-.mobile-menu-visible {
+.mobile-menu-visible1 {
   overflow: hidden;
 }
 
@@ -8897,6 +8897,7 @@ Section Title
   font-size: 16px;
   line-height: 30px;
   color: #6c6a72;
+  height: 300px;
 }
 
 .testimonial-block .info-box {
@@ -8920,8 +8921,12 @@ Section Title
   position: relative;
   display: inline-block;
   margin-bottom: 25px;
+  margin-top: 10px;
 }
-
+.css-dev-only-do-not-override-1b0bdye{
+  width: 100%;
+  height: 100%
+}
 .testimonial-block .info-box .thumb::before {
   position: absolute;
   left: -11px;

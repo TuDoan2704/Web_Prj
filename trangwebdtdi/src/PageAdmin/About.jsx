@@ -47,10 +47,11 @@ export default function About({list, setList}) {
           title=""
           hoverable
           style={{ width: 300 }}
-          cover={<img src={"data:image/jpeg;base64," + item.fileData} />}
+          cover={<img src={"" + item.fileData}/>}
           bordered={false}
           loading={false}
           size="default"
+          
         >
           <Input
               value={item.title}

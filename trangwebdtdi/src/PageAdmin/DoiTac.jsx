@@ -46,7 +46,7 @@ export default function DoiTac({list, setList}) {
           title=""
           hoverable
           style={{ width: 300 }}
-          cover={<img src={"data:image/jpeg;base64," + item.fileData} />}
+          cover={<img src={"" + item.fileData} />}
           actions={[
             <UploadImg
               myIndex={index}

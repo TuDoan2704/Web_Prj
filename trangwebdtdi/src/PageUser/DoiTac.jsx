@@ -64,12 +64,22 @@ export default function DoiTac() {
             loop
             nav
             margin={10}
+            autoplay 
+            autoplayTimeout={1500}
+            responsive={{
+              0: {
+                items: 1
+              },
+              600: {
+                items: 4
+              }
+            }}
           >
             <div className="slide-item">
               <a href="#">
                 <img
                   className="dt"
-                  src={"data:image/jpeg;base64," + img37}
+                  src={"" + img37}
                   alt=""
                 />
               </a>
@@ -78,7 +88,7 @@ export default function DoiTac() {
               <a href="#">
                 <img
                   className="dt"
-                  src={"data:image/jpeg;base64," + img38}
+                  src={"" + img38}
                   alt=""
                 />
               </a>
@@ -87,7 +97,7 @@ export default function DoiTac() {
               <a href="#">
                 <img
                   className="dt"
-                  src={"data:image/jpeg;base64," + img39}
+                  src={"" + img39}
                   alt=""
                 />
               </a>
@@ -96,7 +106,7 @@ export default function DoiTac() {
               <a href="#">
                 <img
                   className="dt"
-                  src={"data:image/jpeg;base64," + img40}
+                  src={"" + img40}
                   alt=""
                 />
               </a>

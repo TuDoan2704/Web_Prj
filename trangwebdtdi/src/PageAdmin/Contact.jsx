@@ -46,7 +46,7 @@ export default function DoiTac({ list, setList }) {
           title=""
           hoverable
           style={{ width: 300 }}
-          cover={ item.id === 28 ? (<img src={"data:image/jpeg;base64," + item.fileData}/>) : null}
+          cover={ item.id === 28 ? (<img src={"" + item.fileData}/>) : null}
           actions={[
             item.id === 28 ? (
             <UploadImg

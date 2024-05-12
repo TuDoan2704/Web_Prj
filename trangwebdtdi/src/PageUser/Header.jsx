@@ -9,7 +9,7 @@ export default function Header() {
   const [linkFace, setLinkFace] = useState();
   const [linkIg, setLinkIg] = useState();
   const [logoDTDI, setLogoDTDI] = useState();
-
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   useEffect(() => {
     fetchData();
   }, []);
@@ -44,6 +44,10 @@ export default function Header() {
         console.error(error);
       });
   }
+  const toggleMenu = () => {
+    debugger;
+    setIsMenuOpen(true);
+  };
   return (
     <header id="home" className="main-header header-style-one">
         {/* Header Top */}
@@ -105,7 +109,7 @@ export default function Header() {
                 <a href="index.html">
                   <img
                     className="logo"
-                    src={"data:image/jpeg;base64," + logoDTDI}
+                    src={"" + logoDTDI}
                     alt=""
                   />
                 </a>
@@ -153,7 +157,7 @@ export default function Header() {
                   </button>
                 </div>
                 {/* Mobile Nav toggler */}
-                <div className="mobile-nav-toggler">
+                <div className="mobile-nav-toggler" onClick={toggleMenu}>
                   <span className="icon lnr-icon-bars" />
                 </div>
               </div>
@@ -163,7 +167,7 @@ export default function Header() {
         {/* End Header Lower */}
         {/* Mobile Menu  */}
         <div className="mobile-menu">
-          <div className="menu-backdrop" />
+          <div className="menu-backdrop" style={{ visibility: isMenuOpen ? 'visible' : 'hidden' }}/>
           {/*Here Menu Will Come Automatically Via Javascript / Same Menu as in Header*/}
           <nav className="menu-box">
             <div className="upper-box">

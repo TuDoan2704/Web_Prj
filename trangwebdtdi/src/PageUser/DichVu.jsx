@@ -61,7 +61,7 @@ export default function DichVu() {
             <div className="feature-block col-lg-4 col-md-6 col-sm-12">
               <div className="inner-box">
                 <div className="image-box">
-                  <figure className="image"><a href><img className="imgH" src={'data:image/jpeg;base64,'+ img17} alt="" /></a></figure>
+                  <figure className="image"><a href><img className="imgH" src={''+ img17} alt="" /></a></figure>
                   <div className="info-box">
                     <i className="icon flaticon-success" />
                     <h6 className="title">{title17}</h6>
@@ -81,7 +81,7 @@ export default function DichVu() {
             <div className="feature-block col-lg-4 col-md-6 col-sm-12">
               <div className="inner-box">
                 <div className="image-box">
-                  <figure className="image"><a href><img className="imgH" src={'data:image/jpeg;base64,'+ img18} alt="" /></a></figure>
+                  <figure className="image"><a href><img className="imgH" src={''+ img18} alt="" /></a></figure>
                   <div className="info-box">
                     <i className="icon flaticon-growth-graph" />
                     <h6 className="title"><a href>{title18}</a></h6>
@@ -101,7 +101,7 @@ export default function DichVu() {
             <div className="feature-block col-lg-4 col-md-6 col-sm-12">
               <div className="inner-box">
                 <div className="image-box">
-                  <figure className="image"><a href><img className="imgH" src={'data:image/jpeg;base64,'+ img19} alt="" /></a></figure>
+                  <figure className="image"><a href><img className="imgH" src={''+ img19} alt="" /></a></figure>
                   <div className="info-box">
                     <i className="icon flaticon-marketing" />
                     <h6 className="title"><a href>{title19}</a></h6>
